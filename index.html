@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Netlabs</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <a href="#" class="logo">
+                <span>Netlabs</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#movies"><i class="fa-solid fa-film"></i> Movies</a></li>
+                <li><a href="#library"><i class="fa-solid fa-bookmark"></i> My Library</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <button class="profile-btn">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <p class="small-title">WELCOME TO</p>
+
+                <h1>NET<span>LABS</span></h1>
+
+                <p>
+                    Discover movies, build your personal library,
+                    and find something worth watching.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#movies" class="primary-btn">
+                        <i class="fa-solid fa-play"></i>
+                        Explore Movies
+                    </a>
+
+                    <a href="#library" class="secondary-btn">
+                        <i class="fa-solid fa-bookmark"></i>
+                        My Library
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="movies-section" id="movies">
+
+            <div class="section-heading">
+                <div>
+                    <p>DISCOVER</p>
+                    <h2>Movies</h2>
+                </div>
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="search-input" placeholder="Search movies...">
+                </div>
+            </div>
+
+            <div id="movie-container" class="movie-grid">
+            </div>
+
+        </section>
+
+
+        <section class="library-section" id="library">
+
+            <div class="section-heading">
+                <div>
+                    <p>YOUR COLLECTION</p>
+                    <h2>My Library</h2>
+                </div>
+            </div>
+
+            <div id="library-container" class="movie-grid">
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="movie-modal" class="movie-modal">
+
+    <div class="movie-modal-content">
+
+        <button class="close-modal" onclick="closeMovieDetails()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div id="movie-details"></div>
+
+    </div>
+
+</div>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            <span>Netlabs</span>
+        </div>
+
+        <p>Discover. Watch. Collect.</p>
+
+        <div class="socials">
+            <a href="https://github.com/ManishKarn56"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/zyx3nonxl._/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Netlabs. All rights reserved.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
